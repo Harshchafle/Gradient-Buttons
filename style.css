@@ -1,0 +1,55 @@
+body {
+    background-image: url(dark-hexagonal-background-with-gradient-color_79603-1409.avif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: auto;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px 5px rgba(200,100,250.7);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: ;
+}
+
+.buttons button {
+    padding: 1em 2em;
+    background-color: black;
+    border: none;
+    color: #f0f0f0;
+    border-radius: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+
+    /* stroke-width: 6px;
+    fill: transparent;
+    stroke: #009ffd;
+    stroke-dasharray: 85 400;
+    stroke-dashoffset: -220; */
+    transform: all .3s ease;
+}
+
+button::after {
+    content: "";
+    position: absolute;
+    height: 108%;
+    width: 105%;
+    border-radius: 1000px;
+    background-image: linear-gradient(to bottom right, #0000ff, #e100ff);
+    z-index: -1;
+}
+
+button:hover {
+    z-index: 0;
+    box-shadow: 40px 0px 100px #008cff, -40px 0px 100px #e100ff;
+}
